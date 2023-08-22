@@ -14,7 +14,7 @@ Next, some operators should be compiled in `code/pointnet2`. Run the following c
 
 ```shell
 cd code/pointnet2/src
-pip install -e .
+pip install -e ..
 ```
 
 You should train all the models in `code/models`. The training and testing config is written in `code/config/config.yml`. After adjusting the configuration files, just run the
@@ -57,7 +57,7 @@ The following environment is tested ok.
 - GCC 9.3.0
 - Python 3.8
 - PyTorch 1.10.0
-- CUDA 11.7
+- CUDA 11.7 / CUDA 11.3
 
 
 # Support
