@@ -30,6 +30,7 @@ import os
 # print(sys.path)
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+/mnt/d/DataSet/3DTeethSeg22/3DTeethSeg22_IGIP
 export CUDA_VISIBLE_DEVICES=0 && python code/models/teeth_gingival_seg.py
 export CUDA_VISIBLE_DEVICES=0 && python code/models/centroids_prediction.py
 export CUDA_VISIBLE_DEVICES=0 && python code/models/patch_segmentation.py
