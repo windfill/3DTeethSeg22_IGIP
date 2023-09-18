@@ -22,7 +22,14 @@ python scripts in `code/models` directly to start training.
 
 ```shell
 # Training steps
-# Change any args you want
+# Change any args you want+
+
+如果不能正常运存
+import sys
+import os
+# print(sys.path)
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 export CUDA_VISIBLE_DEVICES=0 && python code/models/teeth_gingival_seg.py
 export CUDA_VISIBLE_DEVICES=0 && python code/models/centroids_prediction.py
 export CUDA_VISIBLE_DEVICES=0 && python code/models/patch_segmentation.py
