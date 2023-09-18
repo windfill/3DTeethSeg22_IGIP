@@ -31,10 +31,10 @@ import os
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 cd /mnt/d/DataSet/3DTeethSeg22/3DTeethSeg22_IGIP
-export CUDA_VISIBLE_DEVICES=0 && python code/models/teeth_gingival_seg.py
-export CUDA_VISIBLE_DEVICES=0 && python code/models/centroids_prediction.py
-export CUDA_VISIBLE_DEVICES=0 && python code/models/patch_segmentation.py
-export CUDA_VISIBLE_DEVICES=0 && python code/models/teeth_classification.py
+cd /mnt/d/DataSet/3DTeethSeg22/3DTeethSeg22_IGIP && python code/models/teeth_gingival_seg.py
+cd /mnt/d/DataSet/3DTeethSeg22/3DTeethSeg22_IGIP && python code/models/centroids_prediction.py
+cd /mnt/d/DataSet/3DTeethSeg22/3DTeethSeg22_IGIP && python code/models/patch_segmentation.py
+cd /mnt/d/DataSet/3DTeethSeg22/3DTeethSeg22_IGIP && python code/models/teeth_classification.py
 ```
 
 **You should better keep the default learning rate (lr) and epoch nums (n-epochs), they work good for us.** 
